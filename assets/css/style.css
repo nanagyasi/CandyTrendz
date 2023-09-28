@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-banner {
+    color: #ffffff;
+    background-image: url(/assets/imgs/bg.webp);
+    min-height: 400px;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 125px;
+}
+
+.content-banner:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 229, 180, 0.747);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.content-banner .first-title {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.2;
+    position: relative;
+    z-index: 2;
+    margin: 0px 0px 12px;
+}
+
+.content-banner .banner-ads {
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0;
+    position: relative;
+    z-index: 2;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.banner-btn {
+    padding: 0 34px;
+    z-index: 1;
+    margin: 30px auto 25px;
+    line-height: 56px;
+    position: relative;
+    height: 56px;
+    font-size: 16px;
+    background-color: #ff9899;
+    display: inline-block;
+    color: #ffffff;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.banner-btn:hover {
+    color: #ff9899;
+    background-color: #EEE3D4;
+    font-weight: 600;
+    padding: 0 30;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.31);
+    border-radius: 6px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+}
+
+.header-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: transparent;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-item .nav-link {
+    display: block;
+    line-height: 36px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: 0.15s;
+}
+
+.nav-item .nav-link:hover {
+    color: #ff9899;
+}
+
+.navbar-scroll {
+    background-color: #ffffff;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.6s;
+}
+
+.navbar-scroll .nav-item .nav-link {
+    color: #000000;
+}
+
+.navbar-scroll .logo {
+    font-weight: 500;
+}
+
+
+
