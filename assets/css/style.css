@@ -10,7 +10,7 @@ a {
 
 .content-banner {
     color: #ffffff;
-    background-image: url(assets/img/Banner.jpg);
+    background-image: url(../img/banner.jpg);
     min-height: 400px;
     height: 100%;
     position: relative;
