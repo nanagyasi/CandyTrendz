@@ -21,7 +21,6 @@
     }
     .content-banner .first-title {
         font-size: 30px !important;
-        color: #000000;
     }
     .content-banner .first-title {
         margin: 100px 0px 12px;
@@ -30,7 +29,12 @@
         background-color: #ffffff;
         padding: 30px;
     }   
-    
+    .navbar-collapse .text-white {
+        color: #ee82ee !important;
+    }
+    .navbar-collapse .text-bg:hover {
+        background-color: #000000 !important;
+    }
 }
 
 a {
@@ -162,10 +166,10 @@ a {
 
 
 .navbar-scroll .text-bg:hover {
-    background-color: #ee82ee !important;
+    background-color: #000000 !important;
 }
 .navbar-scroll .text-white {
-    color: #000000 !important;
+    color: #ee82ee !important;
 }
 
 section {
