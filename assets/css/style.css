@@ -35,6 +35,11 @@
     .navbar-collapse .text-bg:hover {
         background-color: #000000 !important;
     }
+    .swiper .slide p {
+        font-size: 14px;
+        text-align: justify;
+        display:inline;
+    }
 }
 
 a {
@@ -94,6 +99,7 @@ a {
 
 .swiper {
     height: 430px;
+    z-index: 2;
 }
 
 .swiper .slide h1 {
@@ -111,7 +117,6 @@ a {
     font-size: 17px;
     width: 520px;
     text-align: justify;
-
 }
 
 .swiper .swiper-pagination-bullet {
@@ -120,6 +125,10 @@ a {
     height: 30px;
     text-align: center;
     background: rgba(0, 0, 0, 0.3);
+}
+
+.swiper .swiper-pagination-bullet:active {
+    background: #ee82ee !important;
 }
 
 .header {
