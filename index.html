@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Candy Trendz</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -12,12 +13,16 @@
     <!--Header-->
     <header class="header">
         <div class="header-inner">
-            <div class="container-fluid">
+            <div class="container">
                 <nav class="navbar navbar-expand-lg my-navbar">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="#"><span class="logo"> Candy Trendz</span></a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                      <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo.png" class="logo img-fluid" alt="">
+                      </a>
+                      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="">
+                          <i class="fa fa-bars"></i>
+                        </span>
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
@@ -53,9 +58,9 @@
                             <a href="#" class="nav-link">Contact Us</a>
                           </li>
                         </ul>
-                        <form class="d-flex" role="button">
-                           <a href="#"><i class="fa fa-shopping-bag mx-3 text-white"></i></a>
-                           <a href="#"><i class="fa fa-user text-white"></i></a>                   
+                        <form class="d-flex">
+                           <a href="#" class="text-bg"><i class="fa fa-shopping-bag mx-3 text-white"></i></a>
+                           <a href="#" class="text-bg"><i class="fa fa-user mx-3 text-white"></i></a>                   
                         </form>
                       </div>
                     </div>
@@ -69,9 +74,9 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-md-12">
                     <div class="banner-con text-center">
-                        <p class="first-title">Lorem ipsum dolor sit.</p>
+                        <p class="first-title">THE BEAUTY BOUTIQUE</p>
                         <p class="banner-ads">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <a href="#" class="banner-btn">Get Started</a>
+                        <a href="#" class="banner-btn">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -96,9 +101,46 @@
     
 
 
-
-
-
+    <div class="footer pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="assets/img/logo.png" alt="">
+            <p>ADDRESS: <span>Kronum Aboahyia, Kumasi</span></p>
+            <p>TEL: <span> +233 59 888 1180</span></p>
+            <p>EMAIL: <span>support@candytrendz.com</span></p>
+          </div>
+          <div class="col-md-3">
+            <h4>MENU</h4>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Products</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="col-md-3">
+            <h4>ACCOUNT</h4>
+            <a href="#">Account</a>
+            <a href="#">Checkout</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+            <a href="#">Shopping</a>
+          </div>
+          <div class="col-md-3">
+            <h4 class="news">NEWSLETTER</h4>
+            <p>Subscribe to our newsletter and get updates on Discounts and Coupons</p>
+            <div class="sub-input">
+              <input type="text" placeholder="Enter Your Email">
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 All Rights Reserved by <span>Vision Digital Tech</span></p>
+      </div>
+    </div>
 
 
 
@@ -106,5 +148,18 @@
 
     <script src="assets/js/jquery-3.7.1.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        var navbar = $('.header-inner');
+        $(window).scroll(function(){
+          if($(window).scrollTop() <=40){
+            navbar.removeClass('navbar-scroll');
+          }else {
+            navbar.addClass('navbar-scroll')
+          }
+        });
+      });
+    </script>
 </body>
 </html>
